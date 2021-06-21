@@ -1,0 +1,4 @@
+#Mon Jun 21 15:58:36 BRT 2021
+base.0=/home/debora/flutter_cursos/projects_leonardo/personal_expenses/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

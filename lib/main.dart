@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Container(
               child: Card(
-                color: Colors.purple,
+                color: Colors.blue,
                 child: Text('Gráfico'),
                 elevation: 5,
               ),

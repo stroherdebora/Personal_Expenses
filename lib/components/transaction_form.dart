@@ -31,6 +31,7 @@ class _TransactionFormState extends State<TransactionForm> {
       elevation: 5,
       child: Padding(
         padding: const EdgeInsets.all(10),
+<<<<<<< HEAD
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -65,6 +66,40 @@ class _TransactionFormState extends State<TransactionForm> {
               )
             ],
           ),
+=======
+        child: Column(
+          children: [
+            TextField(
+              controller: titleController,
+              onSubmitted: (_) => _submitForm(),
+              decoration: InputDecoration(
+                labelText: 'Título',
+              ),
+            ),
+            TextField(
+              controller: valueController,
+              keyboardType: TextInputType.numberWithOptions(decimal: true),
+              onSubmitted: (_) => _submitForm(),
+              decoration: InputDecoration(
+                labelText: 'Valor (R\$)',
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: () {
+                    _submitForm();
+                  },
+                  child: Text("Nova Transação"),
+                  style: TextButton.styleFrom(
+                    primary: Colors.purple,
+                  ),
+                ),
+              ],
+            )
+          ],
+>>>>>>> 4d35a60091c0e8f72c51796ac07500d2a2125ecb
         ),
       ),
     );

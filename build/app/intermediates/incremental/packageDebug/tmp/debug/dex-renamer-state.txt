@@ -1,4 +1,4 @@
-#Thu Nov 18 15:19:36 BRT 2021
+#Fri Nov 19 10:26:29 BRT 2021
 base.0=/home/debora/flutter_cursos/projects_leonardo/personal_expenses/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

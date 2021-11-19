@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:personal_expenses/components/chart_bar.dart';
 import 'package:personal_expenses/models/transaction.dart';
 
 class Chart extends StatelessWidget {
@@ -24,6 +25,9 @@ class Chart extends StatelessWidget {
         }
       }
 
+      print(DateFormat.E().format(weekDay)[0]);
+      print(totalSum);
+
       return {
         'day': DateFormat.E().format(weekDay)[0],
         'value': totalSum,
@@ -36,10 +40,14 @@ class Chart extends StatelessWidget {
     groupedTransactions;
     return Card(
       elevation: 6,
-      margin: EdgeInsets.all(20),
+      margin: EdgeInsets.all(15),
       child: Row(
         children: groupedTransactions.map((tr) {
-          return Text('${tr['day']}: ${tr['value']}');
+          return ChartBar(
+            label: tr['day'],
+            value: tr['value'],
+            percentage: 0.5,
+          );
         }).toList(),
       ),
     );

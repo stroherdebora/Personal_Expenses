@@ -23,6 +23,10 @@ class ExpensesApp extends StatelessWidget {
                   fontSize: 17,
                   fontWeight: FontWeight.bold,
                 ),
+                button: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
           appBarTheme: AppBarTheme(
             textTheme: ThemeData.light().textTheme.copyWith(
@@ -59,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Transaction(
       id: 't2',
       title: 'Tablet Samsung S S6 Lite',
-      value: 2100.00,
+      value: 210.00,
       date: DateTime.now(),
     ),
     Transaction(

@@ -1,2 +1,2 @@
-# Personal_Expenses
+# personal_expenses
 Flutter application to control personal expenses
